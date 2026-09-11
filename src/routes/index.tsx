@@ -61,7 +61,7 @@ function Index() {
           <div className="mt-10">
             <a
               href="mailto:hello@secondhalf.co.ke?subject=Starting%20a%20project%20with%20secondhalf"
-              className="inline-flex items-center justify-center rounded-md bg-coral px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-[#d4552f]"
+              className="inline-flex items-center justify-center rounded-md bg-coral px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-coral-strong"
             >
               Start a project
             </a>

@@ -32,6 +32,7 @@
   --color-ring-offset-background: var(--background);
   --color-ink: var(--ink);
   --color-coral: var(--coral);
+  --color-coral-strong: var(--coral-strong);
   --color-cream: var(--cream);
   --color-slate: var(--slate);
 }
