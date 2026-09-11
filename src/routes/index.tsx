@@ -46,11 +46,8 @@ function Index() {
 
       {/* 1. Hero */}
       <section className="relative flex min-h-svh items-center overflow-hidden bg-ink">
-        <SunriseMark
-          animated
-          className="pointer-events-none absolute -right-10 top-1/2 w-[26rem] -translate-y-1/2 text-cream/15 sm:w-[34rem] lg:right-8 lg:w-[42rem]"
-        />
         <div className="relative mx-auto w-full max-w-5xl px-6 py-32">
+          <SunriseMark animated className="mb-10 w-32 text-cream sm:w-40" />
           <h1 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-tight text-cream sm:text-5xl lg:text-6xl">
             We build the systems running quietly behind your business.
           </h1>
