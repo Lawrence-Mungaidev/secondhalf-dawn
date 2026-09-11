@@ -77,16 +77,28 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "secondhalf — technology, built together." },
+      {
+        name: "description",
+        content:
+          "Custom backend systems and business-process automation for Kenyan SMEs.",
+      },
+      { property: "og:title", content: "secondhalf" },
+      {
+        property: "og:description",
+        content: "Custom backend systems and business-process automation for Kenyan SMEs.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
     ],
     links: [
+      { rel: "preconnect", href: "https://api.fontshare.com" },
+      { rel: "preconnect", href: "https://cdn.fontshare.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://api.fontshare.com/v2/css?f[]=general-sans@500,600,700&f[]=satoshi@400,500&display=swap",
+      },
       {
         rel: "stylesheet",
         href: appCss,
