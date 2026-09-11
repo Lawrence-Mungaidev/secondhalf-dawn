@@ -29,8 +29,8 @@ function Index() {
       {/* Nav */}
       <header className="absolute inset-x-0 top-0 z-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
-          <a href="/" className="flex items-center gap-2.5 text-cream">
-            <SunriseMark className="h-6 w-9" />
+          <a href="/" className="flex items-center gap-3 text-cream">
+            <SunriseMark className="h-9 w-14 shrink-0" />
             <span className="font-heading text-lg font-semibold tracking-tight">
               secondhalf
             </span>
@@ -46,11 +46,8 @@ function Index() {
 
       {/* 1. Hero */}
       <section className="relative flex min-h-svh items-center overflow-hidden bg-ink">
-        <SunriseMark
-          animated
-          className="pointer-events-none absolute -right-10 top-1/2 w-[26rem] -translate-y-1/2 text-cream/15 sm:w-[34rem] lg:right-8 lg:w-[42rem]"
-        />
         <div className="relative mx-auto w-full max-w-5xl px-6 py-32">
+          <SunriseMark animated className="mb-10 w-32 text-cream sm:w-40" />
           <h1 className="max-w-2xl text-4xl font-semibold leading-[1.08] tracking-tight text-cream sm:text-5xl lg:text-6xl">
             We build the systems running quietly behind your business.
           </h1>
@@ -171,13 +168,13 @@ function Index() {
       </section>
 
       {/* 4. How we work / who we are */}
-      <section className="bg-cream">
-        <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+      <section className="bg-ink text-cream">
+        <div className="mx-auto max-w-5xl border-t border-cream/15 px-6 py-24 sm:py-32">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
               Who we are
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-slate">
+            <p className="mt-6 text-lg leading-relaxed text-cream/70">
               secondhalf is two co-founders. One spends his time on backend
               systems and software architecture — the part that decides whether
               your software holds up in a year. The other is an automation and
@@ -191,12 +188,12 @@ function Index() {
       </section>
 
       {/* 5. Contact */}
-      <section className="border-t border-ink/10 bg-cream">
+      <section className="border-t border-cream/15 bg-ink text-cream">
         <div className="mx-auto max-w-5xl px-6 py-24 sm:py-28">
           <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
             Talk to us
           </h2>
-          <p className="mt-5 max-w-xl text-lg leading-relaxed text-slate">
+          <p className="mt-5 max-w-xl text-lg leading-relaxed text-cream/70">
             If there's a process in your business that eats time, or a system
             you wish existed, we'd like to hear about it. A short email or a
             WhatsApp message is enough to start.
@@ -204,7 +201,7 @@ function Index() {
           <div className="mt-8 flex flex-col gap-4 text-lg sm:flex-row sm:items-center sm:gap-10">
             <a
               href="mailto:hello@secondhalf.co.ke"
-              className="font-medium text-ink underline decoration-coral decoration-2 underline-offset-4 transition-colors hover:text-coral"
+              className="font-medium text-cream underline decoration-coral decoration-2 underline-offset-4 transition-colors hover:text-coral"
             >
               hello@secondhalf.co.ke
             </a>
@@ -212,7 +209,7 @@ function Index() {
               href="https://wa.me/254700000000"
               target="_blank"
               rel="noreferrer"
-              className="font-medium text-ink underline decoration-coral decoration-2 underline-offset-4 transition-colors hover:text-coral"
+              className="font-medium text-cream underline decoration-coral decoration-2 underline-offset-4 transition-colors hover:text-coral"
             >
               WhatsApp us
             </a>
@@ -223,7 +220,7 @@ function Index() {
       {/* Footer */}
       <footer className="bg-ink text-cream">
         <div className="mx-auto max-w-5xl px-6 py-16">
-          <SunriseMark className="h-12 w-[4.5rem] text-cream/40" />
+          <SunriseMark className="w-24 text-cream" />
           <p className="mt-6 text-sm text-cream/60">
             technology, built together.
           </p>
