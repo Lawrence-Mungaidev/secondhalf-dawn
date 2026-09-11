@@ -33,41 +33,45 @@
   --color-ink: var(--ink);
   --color-coral: var(--coral);
   --color-coral-strong: var(--coral-strong);
+  --color-coral-light: var(--coral-light);
   --color-cream: var(--cream);
   --color-slate: var(--slate);
+  --color-surface: var(--surface);
 }
 
 @theme {
-  --font-heading: "Söhne", "General Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Söhne Buch", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Sora", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
   --radius: 0.5rem;
-  --ink: #1c2541;
-  --coral: #e8623d;
-  --coral-strong: #d4552f;
-  --cream: #f5f1e8;
-  --slate: #6b7280;
+  --ink: #1b2333;
+  --coral: #d85a30;
+  --coral-strong: #c04c26;
+  --coral-light: #f0997b;
+  --cream: #f1efe8;
+  --slate: #5f5e5a;
+  --surface: #ffffff;
 
-  --background: var(--ink);
-  --foreground: var(--cream);
-  --card: #ffffff;
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: var(--surface);
   --card-foreground: var(--ink);
-  --popover: #ffffff;
+  --popover: var(--surface);
   --popover-foreground: var(--ink);
   --primary: var(--ink);
   --primary-foreground: var(--cream);
-  --secondary: #ece7da;
+  --secondary: #e7e4da;
   --secondary-foreground: var(--ink);
-  --muted: #ece7da;
+  --muted: #e7e4da;
   --muted-foreground: var(--slate);
   --accent: var(--coral);
   --accent-foreground: #ffffff;
   --destructive: #b3402a;
   --destructive-foreground: #ffffff;
-  --border: color-mix(in srgb, var(--ink) 14%, transparent);
-  --input: color-mix(in srgb, var(--ink) 14%, transparent);
+  --border: color-mix(in srgb, var(--ink) 12%, transparent);
+  --input: color-mix(in srgb, var(--ink) 12%, transparent);
   --ring: var(--coral);
 }
 
@@ -100,51 +104,43 @@
   }
 }
 
-/* One deliberate motion: the sunrise mark draws in once on load */
-@keyframes sun-draw {
+/* One deliberate motion: the mark settles into place once on load */
+@keyframes mark-settle {
   from {
-    stroke-dashoffset: 1;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes sun-rise {
-  from {
-    transform: translateY(14px);
+    transform: translate(10px, -14px) rotate(-8deg);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translate(0, 0) rotate(0deg);
     opacity: 1;
   }
 }
 
-.sunrise-line {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: sun-draw 1.6s cubic-bezier(0.65, 0, 0.25, 1) forwards;
+@keyframes mark-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.sunrise-ray {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-  animation: sun-draw 0.9s cubic-bezier(0.65, 0, 0.25, 1) forwards;
-}
-
-.sunrise-arc {
+.mark-lead {
   transform-box: fill-box;
   transform-origin: center;
-  animation: sun-rise 1.4s cubic-bezier(0.34, 1.3, 0.5, 1) both;
+  animation: mark-settle 1s cubic-bezier(0.34, 1.2, 0.5, 1) both;
+  animation-delay: 0.15s;
+}
+
+.mark-trail {
+  animation: mark-fade 0.9s ease-out both;
+  animation-delay: 0.45s;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sunrise-line,
-  .sunrise-ray,
-  .sunrise-arc {
+  .mark-lead,
+  .mark-trail {
     animation: none;
-    stroke-dashoffset: 0;
     opacity: 1;
     transform: none;
   }
