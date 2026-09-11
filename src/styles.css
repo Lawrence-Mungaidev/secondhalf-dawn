@@ -38,8 +38,8 @@
 }
 
 @theme {
-  --font-heading: "General Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-body: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Söhne", "General Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Söhne Buch", "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -50,8 +50,8 @@
   --cream: #f5f1e8;
   --slate: #6b7280;
 
-  --background: var(--cream);
-  --foreground: var(--ink);
+  --background: var(--ink);
+  --foreground: var(--cream);
   --card: #ffffff;
   --card-foreground: var(--ink);
   --popover: #ffffff;
