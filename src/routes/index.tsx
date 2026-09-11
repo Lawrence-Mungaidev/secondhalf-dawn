@@ -169,7 +169,7 @@ function Index() {
 
       {/* 4. How we work / who we are */}
       <section className="bg-ink text-cream">
-        <div className="mx-auto max-w-5xl px-6 py-24 sm:py-32">
+        <div className="mx-auto max-w-5xl border-t border-cream/15 px-6 py-24 sm:py-32">
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold tracking-tight sm:text-4xl">
               Who we are
