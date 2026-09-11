@@ -29,8 +29,8 @@ function Index() {
       {/* Nav */}
       <header className="absolute inset-x-0 top-0 z-10">
         <div className="mx-auto flex max-w-5xl items-center justify-between px-6 py-6">
-          <a href="/" className="flex items-center gap-2.5 text-cream">
-            <SunriseMark className="h-6 w-9" />
+          <a href="/" className="flex items-center gap-3 text-cream">
+            <SunriseMark className="h-9 w-14 shrink-0" />
             <span className="font-heading text-lg font-semibold tracking-tight">
               secondhalf
             </span>
