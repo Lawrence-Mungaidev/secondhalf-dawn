@@ -30,7 +30,7 @@ export const Route = createFileRoute("/services")({
 const services: ReadMoreItem[] = [
   {
     title: "Automation systems for business",
-    body: "We start by mapping the work your team repeats every week — the copying between systems, the manual follow-ups, the reports assembled by hand. Those steps become automated workflows that run on their own, accurately, every time. The result is fewer errors, faster turnaround, and staff hours returned to work that actually needs judgement. We build the automation around your existing process rather than asking you to change how you operate.",
+    body: "We start by mapping the work your team repeats every week  the copying between systems, the manual follow-ups, the reports assembled by hand. Those steps become automated workflows that run on their own, accurately, every time. The result is fewer errors, faster turnaround, and staff hours returned to work that actually needs judgement. We build the automation around your existing process rather than asking you to change how you operate.",
   },
   {
     title: "Scalable systems",
@@ -42,7 +42,7 @@ const services: ReadMoreItem[] = [
   },
   {
     title: "Web applications",
-    body: "When off-the-shelf software forces awkward workarounds, we build the application that matches your workflow exactly. Bookings, inventory, records, approvals, reporting — scoped to what your business genuinely needs and nothing it doesn't. Interfaces are designed for the people who use them daily, on desktop and on phones. Everything is documented and built to be maintained over years, not months.",
+    body: "When off-the-shelf software forces awkward workarounds, we build the application that matches your workflow exactly. Bookings, inventory, records, approvals, reporting scoped to what your business genuinely needs and nothing it doesn't. Interfaces are designed for the people who use them daily, on desktop and on phones. Everything is documented and built to be maintained over years, not months.",
   },
   {
     title: "Systems integration",
@@ -93,8 +93,8 @@ function ServicesPage() {
           </h1>
           <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
             Secondhalf is a technology partner for businesses ready to modernise how they operate.
-            We work with growing companies — service businesses, property managers, distributors,
-            professional firms — that have outgrown manual, repetitive and disconnected ways of
+            We work with growing companies service businesses, property managers, distributors,
+            professional firms that have outgrown manual, repetitive and disconnected ways of
             working. The problem is rarely a lack of software; it is work handed between people and
             tools that were never designed to talk to each other. We fix that with practical,
             scalable technology: automated workflows, connected systems and applications shaped

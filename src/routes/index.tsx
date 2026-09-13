@@ -46,8 +46,7 @@ function Index() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate">
             We help businesses move into their next chapter through smart automation and
-            technology. Whatever came before, this is the second half — and it is built with you,
-            not handed to you.
+            technology. This is your next chapter, and we build it together with you.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
@@ -88,7 +87,7 @@ function Index() {
               Our mission
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-slate">
-              We build the systems that run quietly behind a business — automating the repetitive
+              We build the systems that run quietly behind a business automating the repetitive
               work, connecting the tools that never spoke to each other, and putting reliable
               information in front of the people making decisions. Our approach is practical:
               scope tightly, deliver early, and measure the result in hours saved and revenue

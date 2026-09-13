@@ -7,13 +7,13 @@ import { ReadMoreList, type ReadMoreItem } from "@/components/ReadMoreList";
 export const Route = createFileRoute("/solutions")({
   head: () => ({
     meta: [
-      { title: "Solutions — secondhalf technologies" },
+      { title: "Solutions secondhalf technologies" },
       {
         name: "description",
         content:
           "Automated operations, custom software, lead systems, integrations, AI assistants and reporting dashboards delivered for real businesses.",
       },
-      { property: "og:title", content: "Solutions — secondhalf technologies" },
+      { property: "og:title", content: "Solutions secondhalf technologies" },
       {
         property: "og:description",
         content:
@@ -67,7 +67,7 @@ function SolutionsPage() {
           <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate">
             We automate operations, build AI-driven tools, connect systems that were never designed
             to work together, and deliver results a business can measure. Our experience spans
-            service businesses, property management, sales teams and back-office operations, which
+            service businesses, property management, sales teams and back office operations, which
             means we usually recognise the problem before it is fully described. We are equally
             comfortable building something new and improving what already exists. Every engagement
             starts with the outcome you need and works backwards to the smallest system that
@@ -98,7 +98,7 @@ function SolutionsPage() {
               on last year's assumptions ages quickly. We treat keeping current as part of the job:
               testing new models and platforms against real workloads, tracking where costs and
               capabilities are heading, and retiring approaches that have been overtaken. That
-              discipline shows up in the architecture we choose — systems built so a component can
+              discipline shows up in the architecture we choose systems built so a component can
               be replaced without disturbing everything around it. Clients get early access to
               capabilities that genuinely help, and none of the disruption of chasing every
               announcement. We revisit delivered systems as the landscape shifts, so improvements
