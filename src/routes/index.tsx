@@ -5,7 +5,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 import { ContactSection } from "@/components/ContactSection";
 import { WHATSAPP_URL } from "@/lib/site";
 
+
 export const Route = createFileRoute("/")({
+
   head: () => ({
     meta: [
       { title: "secondhalf technologies — technology, built together." },
@@ -22,6 +24,33 @@ export const Route = createFileRoute("/")({
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Secondhalf Technologies",
+          alternateName: [
+            "Secondhalf",
+            "Second Half Tech",
+            "Second Half",
+            "2ndhalf tech",
+            "2ndhalf technology",
+            "2nd half technology",
+            "Secondhalf website",
+          ],
+          url: "https://www.secondhalf.tech",
+          logo: "https://www.secondhalf.tech/favicon-512.png",
+          sameAs: ["https://x.com/Secondhalf_tech"],
+          contactPoint: {
+            "@type": "ContactPoint",
+            telephone: "+254-780-172069",
+            contactType: "customer service",
+          },
+        }),
+      },
     ],
   }),
   component: Index,
