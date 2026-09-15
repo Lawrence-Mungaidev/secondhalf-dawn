@@ -5,10 +5,10 @@ import { DiamondMark } from "@/components/DiamondMark";
 import { WHATSAPP_URL } from "@/lib/site";
 
 const navItems = [
-  { label: "Home", to: "/" as const, hash: undefined },
-  { label: "Services", to: "/services" as const, hash: undefined },
-  { label: "Solutions", to: "/solutions" as const, hash: undefined },
-  { label: "About Us", to: "/about" as const, hash: undefined },
+  { label: "Home", to: "/" as const },
+  { label: "Services", to: "/services" as const },
+  { label: "Solutions", to: "/solutions" as const },
+  { label: "About Us", to: "/about" as const },
   { label: "Contact Us", to: "/" as const, hash: "contact" },
 ];
 
@@ -25,16 +25,16 @@ export function SiteHeader() {
 
         <nav className="ml-auto hidden items-center gap-8 md:flex">
           {navItems.map((item) => (
-            <Link
+           <Link
               key={item.label}
               to={item.to}
-              hash={item.hash}
+              {...(item.hash ? { hash: item.hash } : {})}
               className="relative py-1 text-sm font-medium text-slate transition-colors hover:text-ink after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-coral after:transition-transform hover:after:scale-x-100"
               activeOptions={{ exact: item.to === "/" && !item.hash }}
               activeProps={{ className: "text-ink" }}
             >
               {item.label}
-            </Link>
+          </Link>
           ))}
           <a
             href={WHATSAPP_URL}
@@ -60,13 +60,14 @@ export function SiteHeader() {
         <nav className="border-t border-ink/10 bg-cream px-6 pb-6 pt-2 md:hidden">
           {navItems.map((item) => (
             <Link
-              key={item.label}
-              to={item.to}
-              hash={item.hash}
-              onClick={() => setOpen(false)}
-              className="block border-b border-ink/5 py-3 text-base font-medium text-ink"
-            >
-              {item.label}
+                key={item.label}
+                to={item.to}
+                {...(item.hash ? { hash: item.hash } : {})}
+                className="relative py-1 text-sm font-medium text-slate transition-colors hover:text-ink after:absolute after:inset-x-0 after:-bottom-0.5 after:h-0.5 after:origin-left after:scale-x-0 after:bg-coral after:transition-transform hover:after:scale-x-100"
+                activeOptions={{ exact: item.to === "/" && !item.hash }}
+                activeProps={{ className: "text-ink" }}
+              >
+                {item.label}
             </Link>
           ))}
           <a
