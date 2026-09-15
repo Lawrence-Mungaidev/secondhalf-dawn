@@ -89,8 +89,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         content: "Custom backend systems and business-process automation for Kenyan SMEs.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+            { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:site", content: "@Secondhalf_tech" },
+      { name: "twitter:image", content: "https://www.secondhalf.tech/og-image.png" },
+      { property: "og:image", content: "https://www.secondhalf.tech/og-image.png" },
     ],
     links: [
       { rel: "preconnect", href: "https://api.fontshare.com" },
