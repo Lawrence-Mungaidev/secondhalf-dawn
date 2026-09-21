@@ -1,9 +1,9 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { DiamondMark } from "@/components/DiamondMark";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ContactSection } from "@/components/ContactSection";
 import { WHATSAPP_URL } from "@/lib/site";
+import { DiamondMark } from "@/components/DiamondMark";
 
 
 export const Route = createFileRoute("/")({
@@ -23,9 +23,14 @@ export const Route = createFileRoute("/")({
           "Automation, AI solutions, web apps and systems integration for businesses ready to modernise.",
       },
       { property: "og:type", content: "website" },
+<<<<<<< HEAD
            { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "https://www.secondhalf.tech/og-image.png" },
       { property: "og:image", content: "https://www.secondhalf.tech/og-image.png" },
+=======
+      { name: "twitter:card", content: "summary" },
+      { name: "facebook-domain-verification", content: "5q3f2cg10txmmsp3jdweyn2tp98mie" },
+>>>>>>> f808a0f (Add face book domain verification)
     ],
     scripts: [
       {
@@ -68,8 +73,7 @@ function Index() {
       {/* Hero */}
       <section className="bg-cream">
         <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-32">
-          <DiamondMark animated className="mb-8 w-24 text-ink sm:w-32" />
-          <p className="font-heading text-sm font-semibold tracking-tight text-coral">
+          <DiamondMark animated className="mb-8 w-24 text-ink sm:w-32" />          <p className="font-heading text-sm font-semibold tracking-tight text-coral">
             secondhalf technologies
           </p>
           <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
