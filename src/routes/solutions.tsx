@@ -55,16 +55,16 @@ const solutions: ReadMoreItem[] = [
 
 function SolutionsPage() {
   return (
-    <div className="min-h-screen bg-cream text-ink">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <section className="border-b border-ink/10 bg-cream">
+      <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Solutions
           </h1>
           <h2 className="mt-10 font-heading text-2xl font-semibold tracking-tight">Capabilities</h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate">
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">
             We automate operations, build AI-driven tools, connect systems that were never designed
             to work together, and deliver results a business can measure. Our experience spans
             service businesses, property management, sales teams and back office operations, which
@@ -87,13 +87,13 @@ function SolutionsPage() {
         </div>
       </section>
 
-      <section className="bg-cream">
+      <section className="bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="max-w-3xl border-l-2 border-coral pl-6 sm:pl-10">
+          <div className="max-w-3xl border-l-2 border-accent pl-6 sm:pl-10">
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Staying ahead of industry changes
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-slate">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               Automation and AI are moving faster than any single project cycle, and a system built
               on last year's assumptions ages quickly. We treat keeping current as part of the job:
               testing new models and platforms against real workloads, tracking where costs and

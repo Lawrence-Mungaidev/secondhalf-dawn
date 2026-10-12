@@ -83,15 +83,15 @@ const whyUs: ReadMoreItem[] = [
 
 function ServicesPage() {
   return (
-    <div className="min-h-screen bg-cream text-ink">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <section className="border-b border-ink/10 bg-cream">
+      <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <h1 className="max-w-3xl font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Services
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
             Secondhalf is a technology partner for businesses ready to modernise how they operate.
             We work with growing companies service businesses, property managers, distributors,
             professional firms that have outgrown manual, repetitive and disconnected ways of
@@ -105,7 +105,7 @@ function ServicesPage() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noreferrer"
-            className="mt-10 inline-flex rounded-md bg-coral px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-coral-strong"
+            className="mt-10 inline-flex rounded-md bg-accent px-7 py-3.5 text-base font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
           >
             Get Started
           </a>
@@ -123,12 +123,12 @@ function ServicesPage() {
         </div>
       </section>
 
-      <section className="bg-cream">
+      <section className="bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Why customers choose Secondhalf
           </h2>
-          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-slate">
+          <p className="mt-4 max-w-2xl text-lg leading-relaxed text-muted-foreground">
             The work speaks for itself, but here is what clients tell us keeps them with us.
           </p>
           <div className="mt-10">

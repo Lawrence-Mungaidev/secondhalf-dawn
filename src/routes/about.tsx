@@ -54,15 +54,15 @@ const values: ReadMoreItem[] = [
 
 function AboutPage() {
   return (
-    <div className="min-h-screen bg-cream text-ink">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
-      <section className="border-b border-ink/10 bg-cream">
+      <section className="border-b border-border bg-background">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <h1 className="max-w-3xl font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             How we are shaped
           </h1>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
             Companies are shaped less by what they claim and more by the decisions they make when a
             project gets difficult. Secondhalf was shaped by years spent close to how businesses
             really run — the workarounds, the systems nobody trusts, the reports built by hand at
