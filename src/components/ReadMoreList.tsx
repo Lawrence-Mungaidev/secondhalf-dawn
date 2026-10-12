@@ -17,12 +17,12 @@ export function ReadMoreList({ items, idPrefix }: { items: ReadMoreItem[]; idPre
         <AccordionItem
           key={item.title}
           value={`${idPrefix}-${i}`}
-          className="border-b border-ink/10"
+          className="border-b border-border"
         >
-          <AccordionTrigger className="py-5 text-left font-heading text-lg font-semibold tracking-tight text-ink hover:no-underline sm:text-xl">
+          <AccordionTrigger className="py-5 text-left font-heading text-lg font-semibold tracking-tight text-foreground hover:no-underline sm:text-xl">
             {item.title}
           </AccordionTrigger>
-          <AccordionContent className="max-w-3xl pb-6 text-base leading-relaxed text-slate">
+          <AccordionContent className="max-w-3xl pb-6 text-base leading-relaxed text-muted-foreground">
             {item.body}
           </AccordionContent>
         </AccordionItem>

@@ -67,19 +67,19 @@ const highlights = ["Automation", "AI solutions", "Web apps", "Systems integrati
 
 function Index() {
   return (
-    <div className="min-h-screen bg-cream text-ink">
+    <div className="min-h-screen bg-background text-foreground">
       <SiteHeader />
 
       {/* Hero */}
-      <section className="bg-cream">
+      <section className="bg-background">
         <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-32">
-          <DiamondMark animated className="mb-8 w-24 text-ink sm:w-32" />          <p className="font-heading text-sm font-semibold tracking-tight text-coral">
+          <DiamondMark animated className="mb-8 w-24 text-foreground sm:w-32" />          <p className="font-heading text-sm font-semibold tracking-tight text-accent">
             secondhalf technologies
           </p>
           <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
             Technology, built together.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             We help businesses move into their next chapter through smart automation and
             technology. This is your next chapter, and we build it together with you.
           </p>
@@ -88,13 +88,13 @@ function Index() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-md bg-coral px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-coral-strong"
+              className="inline-flex items-center justify-center rounded-md bg-accent px-7 py-3.5 text-base font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
             >
               Get Started
             </a>
             <Link
               to="/services"
-              className="inline-flex items-center justify-center rounded-md border border-ink/20 px-7 py-3.5 text-base font-medium text-ink transition-colors hover:border-ink"
+              className="inline-flex items-center justify-center rounded-md border border-border px-7 py-3.5 text-base font-medium text-foreground transition-colors hover:border-foreground"
             >
               See our services
             </Link>
@@ -103,11 +103,11 @@ function Index() {
       </section>
 
       {/* Highlights strip */}
-      <section className="border-y border-ink/10 bg-ink text-cream">
+      <section className="border-y border-border bg-surface text-foreground">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-6 py-5 text-sm font-medium sm:gap-x-10">
           {highlights.map((item, i) => (
             <span key={item} className="flex items-center gap-6 sm:gap-10">
-              {i > 0 ? <span className="text-coral">•</span> : null}
+              {i > 0 ? <span className="text-accent">•</span> : null}
               {item}
             </span>
           ))}
@@ -117,11 +117,11 @@ function Index() {
       {/* Mission */}
       <section className="bg-surface">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="max-w-3xl border-l-2 border-coral pl-6 sm:pl-10">
+          <div className="max-w-3xl border-l-2 border-accent pl-6 sm:pl-10">
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Our mission
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-slate">
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               We build the systems that run quietly behind a business automating the repetitive
               work, connecting the tools that never spoke to each other, and putting reliable
               information in front of the people making decisions. Our approach is practical:
@@ -132,7 +132,7 @@ function Index() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 to="/solutions"
-                className="inline-flex items-center justify-center rounded-md border border-ink/20 px-6 py-3 text-base font-medium text-ink transition-colors hover:border-ink"
+                className="inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-base font-medium text-foreground transition-colors hover:border-foreground"
               >
                 See what we've delivered
               </Link>

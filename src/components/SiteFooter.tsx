@@ -18,39 +18,39 @@ function XLogo({ className }: { className?: string }) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-ink text-cream">
+    <footer className="bg-surface text-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 sm:grid-cols-3">
         <div>
-          <DiamondMark className="w-14 text-cream" />
+          <DiamondMark className="w-14 text-foreground" />
           <p className="mt-4 font-heading text-lg font-semibold tracking-tight">secondhalf</p>
-          <p className="mt-2 text-sm text-cream/60">Technology, built together.</p>
+          <p className="mt-2 text-sm text-muted-foreground">Technology, built together.</p>
         </div>
 
         <div>
           <p className="font-heading text-sm font-semibold">Quick links</p>
-          <ul className="mt-4 space-y-2 text-sm text-cream/70">
+          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li>
-              <Link to="/" className="transition-colors hover:text-coral-light">
+              <Link to="/" className="transition-colors hover:text-accent-hover">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/services" className="transition-colors hover:text-coral-light">
+              <Link to="/services" className="transition-colors hover:text-accent-hover">
                 Services
               </Link>
             </li>
             <li>
-              <Link to="/solutions" className="transition-colors hover:text-coral-light">
+              <Link to="/solutions" className="transition-colors hover:text-accent-hover">
                 Solutions
               </Link>
             </li>
             <li>
-              <Link to="/about" className="transition-colors hover:text-coral-light">
+              <Link to="/about" className="transition-colors hover:text-accent-hover">
                 About Us
               </Link>
             </li>
             <li>
-              <Link to="/" hash="contact" className="transition-colors hover:text-coral-light">
+              <Link to="/" hash="contact" className="transition-colors hover:text-accent-hover">
                 Contact Us
               </Link>
             </li>
@@ -59,38 +59,38 @@ export function SiteFooter() {
 
         <div>
           <p className="font-heading text-sm font-semibold">Contact</p>
-          <ul className="mt-4 space-y-2 text-sm text-cream/70">
+          <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
             <li className="flex items-center gap-2">
-              <Mail className="h-4 w-4 text-coral" />
+              <Mail className="h-4 w-4 text-accent" />
               <a
                 href="mailto:secondhalftech@gmail.com"
-                className="hover:text-coral-light"
+                className="hover:text-accent-hover"
               >
                 secondhalftech@gmail.com
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-coral" />
-              <a href={`tel:${PHONE_PRIMARY.replace(/\s/g, "")}`} className="hover:text-coral-light">
+              <Phone className="h-4 w-4 text-accent" />
+              <a href={`tel:${PHONE_PRIMARY.replace(/\s/g, "")}`} className="hover:text-accent-hover">
                 {PHONE_PRIMARY}
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Phone className="h-4 w-4 text-coral" />
+              <Phone className="h-4 w-4 text-accent" />
               <a
                 href={`tel:${PHONE_SECONDARY.replace(/\s/g, "")}`}
-                className="hover:text-coral-light"
+                className="hover:text-accent-hover"
               >
                 {PHONE_SECONDARY}
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <XLogo className="h-4 w-4 text-coral" />
+              <XLogo className="h-4 w-4 text-accent" />
               <a
                 href="https://x.com/Secondhalf_tech"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-coral-light"
+                className="hover:text-accent-hover"
               >
                 @Secondhalf_tech
               </a>
@@ -99,8 +99,8 @@ export function SiteFooter() {
         </div>
       </div>
 
-      <div className="border-t border-cream/10">
-        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-cream/50">
+      <div className="border-t border-border">
+        <div className="mx-auto max-w-6xl px-6 py-6 text-sm text-muted-foreground">
           © 2026 Secondhalf. All rights reserved.
         </div>
       </div>
