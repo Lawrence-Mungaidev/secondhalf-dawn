@@ -8,5 +8,3 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
-
-- Brand logo lives only in src/components/BrandMark.tsx (currently a placeholder) so swapping the real SVG is a one-file change.

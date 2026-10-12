@@ -45,7 +45,7 @@ const solutions: ReadMoreItem[] = [
   },
   {
     title: "AI assistants and chatbots",
-    body: "We have deployed AI assistants that answer customer questions around the clock, drawing on the client's own pricing, policies and service information. Routine enquiries resolve instantly, while anything complex is escalated to a person with full context attached. Response times dropped sharply without adding headcount, and the assistant improves as more conversations are reviewed.",
+    body: "Our first project is Alex, an AI assistant that replies to guest messages on WhatsApp for short stay hosts. The same approach suits any business that answers the same questions again and again: prices, availability, directions, house rules. The assistant handles the routine messages at any hour, and the owner steps in only when a conversation needs a person.",
   },
   {
     title: "Dashboards and operational reporting",
@@ -73,6 +73,43 @@ function SolutionsPage() {
             starts with the outcome you need and works backwards to the smallest system that
             delivers it. What follows is a sample of the work.
           </p>
+        </div>
+      </section>
+
+      <section className="border-b border-border bg-background">
+        <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
+          <p className="text-sm font-medium text-accent">Featured project</p>
+          <h2 className="mt-3 max-w-3xl font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
+            Alex, an AI assistant for WhatsApp
+          </h2>
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+            Alex answers guest messages for short stay hosts on WhatsApp, at any hour, so the
+            host is no longer the one replying at midnight.
+          </p>
+
+          <div className="mt-12 grid gap-10 sm:grid-cols-3">
+            <div className="border-l-2 border-accent pl-5">
+              <h3 className="font-heading text-lg font-semibold">The problem</h3>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                Guests message at all hours with the same questions, and slow replies cost hosts
+                bookings and good reviews.
+              </p>
+            </div>
+            <div className="border-l-2 border-accent pl-5">
+              <h3 className="font-heading text-lg font-semibold">What we built</h3>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                An assistant that reads each incoming WhatsApp message and replies on the
+                host's behalf, in a natural tone, without anyone typing.
+              </p>
+            </div>
+            <div className="border-l-2 border-accent pl-5">
+              <h3 className="font-heading text-lg font-semibold">How it runs</h3>
+              <p className="mt-3 leading-relaxed text-muted-foreground">
+                Automated workflows in n8n, the WhatsApp Cloud API for messaging, and Claude
+                for understanding and writing the replies.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 

@@ -3,6 +3,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ContactSection } from "@/components/ContactSection";
 import { WHATSAPP_URL } from "@/lib/site";
+import { DiamondMark } from "@/components/DiamondMark";
 
 
 export const Route = createFileRoute("/")({
@@ -22,7 +23,9 @@ export const Route = createFileRoute("/")({
           "Automation, AI solutions, web apps and systems integration for businesses ready to modernise.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://www.secondhalf.tech/og-image.png" },
+      { property: "og:image", content: "https://www.secondhalf.tech/og-image.png" },
       { name: "facebook-domain-verification", content: "5q3f2cg10txmmsp3jdweyn2tp98mie" },
     ],
     scripts: [
@@ -60,35 +63,34 @@ const highlights = ["Automation", "AI solutions", "Web apps", "Systems integrati
 
 function Index() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-cream text-ink">
       <SiteHeader />
 
       {/* Hero */}
-      <section className="hero-glow">
-        <div className="mx-auto w-full max-w-6xl px-6 py-28 sm:py-40">
-          <p className="font-heading text-sm font-semibold tracking-tight text-accent">
+      <section className="bg-cream">
+        <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-32">
+          <DiamondMark animated className="mb-8 w-24 text-ink sm:w-32" />          <p className="font-heading text-sm font-semibold tracking-tight text-coral">
             secondhalf technologies
           </p>
-          <h1 className="hero-in mt-4 max-w-4xl font-heading text-5xl font-bold leading-[0.98] tracking-[-0.035em] sm:text-7xl lg:text-8xl">
-            Technology, <span className="text-accent">built together.</span>
+          <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+            Technology, built together.
           </h1>
-          <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-xl text-lg leading-relaxed text-slate">
             We help businesses move into their next chapter through smart automation and
             technology. This is your next chapter, and we build it together with you.
           </p>
-          <div className="hero-in-bar mt-8 h-1 w-16 rounded-full bg-accent" />
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href={WHATSAPP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-md bg-accent px-7 py-3.5 text-base font-medium text-accent-foreground transition-colors hover:bg-accent-hover"
+              className="inline-flex items-center justify-center rounded-md bg-coral px-7 py-3.5 text-base font-medium text-white transition-colors hover:bg-coral-strong"
             >
               Get Started
             </a>
             <Link
               to="/services"
-              className="inline-flex items-center justify-center rounded-md border border-border px-7 py-3.5 text-base font-medium text-foreground transition-colors hover:border-foreground"
+              className="inline-flex items-center justify-center rounded-md border border-ink/20 px-7 py-3.5 text-base font-medium text-ink transition-colors hover:border-ink"
             >
               See our services
             </Link>
@@ -97,11 +99,11 @@ function Index() {
       </section>
 
       {/* Highlights strip */}
-      <section className="border-y border-border bg-surface text-foreground">
+      <section className="border-y border-ink/10 bg-ink text-cream">
         <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-6 gap-y-3 px-6 py-5 text-sm font-medium sm:gap-x-10">
           {highlights.map((item, i) => (
             <span key={item} className="flex items-center gap-6 sm:gap-10">
-              {i > 0 ? <span className="text-accent">•</span> : null}
+              {i > 0 ? <span className="text-coral">•</span> : null}
               {item}
             </span>
           ))}
@@ -109,13 +111,13 @@ function Index() {
       </section>
 
       {/* Mission */}
-      <section className="border-y border-border bg-surface">
+      <section className="bg-surface">
         <div className="mx-auto max-w-6xl px-6 py-24">
-          <div className="max-w-3xl border-l-2 border-accent pl-6 sm:pl-10">
+          <div className="max-w-3xl border-l-2 border-coral pl-6 sm:pl-10">
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Our mission
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-slate">
               We build the systems that run quietly behind a business automating the repetitive
               work, connecting the tools that never spoke to each other, and putting reliable
               information in front of the people making decisions. Our approach is practical:
@@ -126,7 +128,7 @@ function Index() {
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 to="/solutions"
-                className="inline-flex items-center justify-center rounded-md border border-border px-6 py-3 text-base font-medium text-foreground transition-colors hover:border-foreground"
+                className="inline-flex items-center justify-center rounded-md border border-ink/20 px-6 py-3 text-base font-medium text-ink transition-colors hover:border-ink"
               >
                 See what we've delivered
               </Link>
