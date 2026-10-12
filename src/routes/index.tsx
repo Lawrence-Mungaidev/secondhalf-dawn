@@ -3,7 +3,6 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { ContactSection } from "@/components/ContactSection";
 import { WHATSAPP_URL } from "@/lib/site";
-import { DiamondMark } from "@/components/DiamondMark";
 
 
 export const Route = createFileRoute("/")({
@@ -23,14 +22,8 @@ export const Route = createFileRoute("/")({
           "Automation, AI solutions, web apps and systems integration for businesses ready to modernise.",
       },
       { property: "og:type", content: "website" },
-<<<<<<< HEAD
-           { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "https://www.secondhalf.tech/og-image.png" },
-      { property: "og:image", content: "https://www.secondhalf.tech/og-image.png" },
-=======
       { name: "twitter:card", content: "summary" },
       { name: "facebook-domain-verification", content: "5q3f2cg10txmmsp3jdweyn2tp98mie" },
->>>>>>> f808a0f (Add face book domain verification)
     ],
     scripts: [
       {
@@ -71,18 +64,19 @@ function Index() {
       <SiteHeader />
 
       {/* Hero */}
-      <section className="bg-background">
-        <div className="mx-auto w-full max-w-6xl px-6 py-24 sm:py-32">
-          <DiamondMark animated className="mb-8 w-24 text-foreground sm:w-32" />          <p className="font-heading text-sm font-semibold tracking-tight text-accent">
+      <section className="hero-glow">
+        <div className="mx-auto w-full max-w-6xl px-6 py-28 sm:py-40">
+          <p className="font-heading text-sm font-semibold tracking-tight text-accent">
             secondhalf technologies
           </p>
-          <h1 className="mt-3 max-w-3xl font-heading text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
-            Technology, built together.
+          <h1 className="hero-in mt-4 max-w-4xl font-heading text-5xl font-bold leading-[0.98] tracking-[-0.035em] sm:text-7xl lg:text-8xl">
+            Technology, <span className="text-accent">built together.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
             We help businesses move into their next chapter through smart automation and
             technology. This is your next chapter, and we build it together with you.
           </p>
+          <div className="hero-in-bar mt-8 h-1 w-16 rounded-full bg-accent" />
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href={WHATSAPP_URL}
@@ -115,7 +109,7 @@ function Index() {
       </section>
 
       {/* Mission */}
-      <section className="bg-surface">
+      <section className="border-y border-border bg-surface">
         <div className="mx-auto max-w-6xl px-6 py-24">
           <div className="max-w-3xl border-l-2 border-accent pl-6 sm:pl-10">
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">

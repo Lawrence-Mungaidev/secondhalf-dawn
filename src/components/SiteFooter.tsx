@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, Phone } from "lucide-react";
-import { DiamondMark } from "@/components/DiamondMark";
+import { BrandMark, Wordmark } from "@/components/BrandMark";
 import { PHONE_PRIMARY, PHONE_SECONDARY } from "@/lib/site";
 
 function XLogo({ className }: { className?: string }) {
@@ -18,11 +18,10 @@ function XLogo({ className }: { className?: string }) {
 
 export function SiteFooter() {
   return (
-    <footer className="bg-surface text-foreground">
+    <footer className="border-t border-border bg-surface text-foreground">
       <div className="mx-auto grid max-w-6xl gap-12 px-6 py-16 sm:grid-cols-3">
         <div>
-          <DiamondMark className="w-14 text-foreground" />
-          <p className="mt-4 font-heading text-lg font-semibold tracking-tight">secondhalf</p>
+          <div className="flex items-center gap-3"><BrandMark className="h-10 w-10" /><Wordmark /></div>
           <p className="mt-2 text-sm text-muted-foreground">Technology, built together.</p>
         </div>
 

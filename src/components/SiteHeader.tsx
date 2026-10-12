@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { DiamondMark } from "@/components/DiamondMark";
+import { BrandMark, Wordmark } from "@/components/BrandMark";
 import { WHATSAPP_URL } from "@/lib/site";
 
 const navItems = [
@@ -19,8 +19,8 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center gap-8 px-6 py-3">
         <Link to="/" className="flex items-center gap-3 text-foreground" onClick={() => setOpen(false)}>
-          <DiamondMark className="h-8 w-11 shrink-0" />
-          <span className="font-heading text-lg font-semibold tracking-tight">secondhalf</span>
+          <BrandMark className="h-9 w-9 shrink-0" />
+          <Wordmark />
         </Link>
 
         <nav className="ml-auto hidden items-center gap-8 md:flex">
