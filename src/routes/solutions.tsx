@@ -53,18 +53,36 @@ const solutions: ReadMoreItem[] = [
   },
 ];
 
+const alexScreens = [
+  {
+    src: "/alex_chat_1.jpg",
+    alt: "WhatsApp chat where Alex greets a guest and asks what dates and how many people",
+    caption: "Alex greets the guest and finds out what they need.",
+  },
+  {
+    src: "/alex_chat_2.jpg",
+    alt: "WhatsApp chat where Alex collects check in and check out dates and the guest name",
+    caption: "It collects the dates and name, then confirms them back.",
+  },
+  {
+    src: "/alex_chat_3.jpg",
+    alt: "WhatsApp chat where Alex shares a room with its price and an M-Pesa payment prompt appears",
+    caption: "It shares the room and price, then starts an M-Pesa payment.",
+  },
+];
+
 function SolutionsPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
+    <div className="min-h-screen bg-cream text-ink">
       <SiteHeader />
 
-      <section className="border-b border-border bg-background">
+      <section className="border-b border-ink/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
           <h1 className="font-heading text-4xl font-semibold leading-[1.1] tracking-tight sm:text-5xl">
             Solutions
           </h1>
           <h2 className="mt-10 font-heading text-2xl font-semibold tracking-tight">Capabilities</h2>
-          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-4 max-w-3xl text-lg leading-relaxed text-slate">
             We automate operations, build AI-driven tools, connect systems that were never designed
             to work together, and deliver results a business can measure. Our experience spans
             service businesses, property management, sales teams and back office operations, which
@@ -76,39 +94,60 @@ function SolutionsPage() {
         </div>
       </section>
 
-      <section className="border-b border-border bg-background">
+      <section className="border-b border-ink/10 bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <p className="text-sm font-medium text-accent">Featured project</p>
+          <p className="text-sm font-medium text-coral">Featured project</p>
           <h2 className="mt-3 max-w-3xl font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
             Alex, an AI assistant for WhatsApp
           </h2>
-          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-muted-foreground">
+          <p className="mt-6 max-w-3xl text-lg leading-relaxed text-slate">
             Alex answers guest messages for short stay hosts on WhatsApp, at any hour, so the
-            host is no longer the one replying at midnight.
+            host is no longer the one replying at midnight. It is the first system we have
+            built and delivered as secondhalf technologies.
           </p>
 
           <div className="mt-12 grid gap-10 sm:grid-cols-3">
-            <div className="border-l-2 border-accent pl-5">
+            <div className="border-l-2 border-coral pl-5">
               <h3 className="font-heading text-lg font-semibold">The problem</h3>
-              <p className="mt-3 leading-relaxed text-muted-foreground">
+              <p className="mt-3 leading-relaxed text-slate">
                 Guests message at all hours with the same questions, and slow replies cost hosts
                 bookings and good reviews.
               </p>
             </div>
-            <div className="border-l-2 border-accent pl-5">
+            <div className="border-l-2 border-coral pl-5">
               <h3 className="font-heading text-lg font-semibold">What we built</h3>
-              <p className="mt-3 leading-relaxed text-muted-foreground">
+              <p className="mt-3 leading-relaxed text-slate">
                 An assistant that reads each incoming WhatsApp message and replies on the
                 host's behalf, in a natural tone, without anyone typing.
               </p>
             </div>
-            <div className="border-l-2 border-accent pl-5">
+            <div className="border-l-2 border-coral pl-5">
               <h3 className="font-heading text-lg font-semibold">How it runs</h3>
-              <p className="mt-3 leading-relaxed text-muted-foreground">
+              <p className="mt-3 leading-relaxed text-slate">
                 Automated workflows in n8n, the WhatsApp Cloud API for messaging, and Claude
                 for understanding and writing the replies.
               </p>
             </div>
+          </div>
+
+          <h3 className="mt-16 font-heading text-2xl font-semibold tracking-tight">
+            See Alex in action
+          </h3>
+          <p className="mt-2 text-sm text-slate">A demo conversation on WhatsApp.</p>
+          <div className="mt-8 grid gap-8 sm:grid-cols-3">
+            {alexScreens.map((shot) => (
+              <figure key={shot.src}>
+                <img
+                  src={shot.src}
+                  alt={shot.alt}
+                  loading="lazy"
+                  className="w-full rounded-xl border border-ink/10"
+                />
+                <figcaption className="mt-3 text-sm leading-relaxed text-slate">
+                  {shot.caption}
+                </figcaption>
+              </figure>
+            ))}
           </div>
         </div>
       </section>
@@ -124,13 +163,13 @@ function SolutionsPage() {
         </div>
       </section>
 
-      <section className="bg-background">
+      <section className="bg-cream">
         <div className="mx-auto max-w-6xl px-6 py-20 sm:py-24">
-          <div className="max-w-3xl border-l-2 border-accent pl-6 sm:pl-10">
+          <div className="max-w-3xl border-l-2 border-coral pl-6 sm:pl-10">
             <h2 className="font-heading text-3xl font-semibold tracking-tight sm:text-4xl">
               Staying ahead of industry changes
             </h2>
-            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+            <p className="mt-6 text-lg leading-relaxed text-slate">
               Automation and AI are moving faster than any single project cycle, and a system built
               on last year's assumptions ages quickly. We treat keeping current as part of the job:
               testing new models and platforms against real workloads, tracking where costs and
